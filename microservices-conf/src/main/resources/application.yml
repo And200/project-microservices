@@ -4,13 +4,14 @@ server:
 spring:
   cloud:
     config:
+      name: customer-service
       server:
         default-label: main
         git:
           uri: https://github.com/And200/project-microservices.git
           searchPaths: config-data
-          username: And200
-          password: nosredna20022
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
   security:
     user:
       name: root
