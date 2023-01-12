@@ -1,6 +1,5 @@
 package co.edu.cun.pany;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +16,7 @@ public class PanyApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(PanyApplication.class, args);
+		
 	}
 
 	@RequestMapping(value = "/app")
