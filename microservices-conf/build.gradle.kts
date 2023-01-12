@@ -17,6 +17,8 @@ extra["springCloudVersion"] = "2021.0.5"
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.springframework.cloud:spring-cloud-config-server")
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap
+	implementation("org.springframework.cloud:spring-cloud-starter-bootstrap:4.0.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.security:spring-security-test")
 }
