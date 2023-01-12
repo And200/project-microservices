@@ -1,10 +1,7 @@
 package co.cun.edu.customermicroservice.web.rest.errors;
 
 import java.util.List;
-<<<<<<< HEAD
-=======
 
->>>>>>> 14b631ca7e762996af8a874ece38b74eea1b80bd
 import java.util.Map;
 
 import lombok.Builder;

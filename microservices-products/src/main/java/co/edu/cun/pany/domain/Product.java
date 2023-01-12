@@ -2,14 +2,11 @@ package co.edu.cun.pany.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-<<<<<<< HEAD
-
-=======
->>>>>>> 14b631ca7e762996af8a874ece38b74eea1b80bd
 import javax.persistence.*;
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;

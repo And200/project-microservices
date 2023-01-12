@@ -1,10 +1,6 @@
 package co.cun.edu.customermicroservice.domain;
 
 import java.io.Serializable;
-<<<<<<< HEAD
-
-=======
->>>>>>> 14b631ca7e762996af8a874ece38b74eea1b80bd
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
