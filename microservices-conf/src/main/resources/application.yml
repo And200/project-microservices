@@ -7,10 +7,64 @@ spring:
       server:
         default-label: main
         git:
-          ignore-local-ssh-settings: true
           uri: git@github.com:And200/project-microservices.git
           searchPaths: config-data
-          password: ${GIT_PASSWORD}
+          passphrase: nosredna20022
+          private-key: |
+                        -----BEGIN RSA PRIVATE KEY-----
+          Proc-Type: 4,ENCRYPTED
+          DEK-Info: AES-128-CBC,01F31EDE2D42CA3CAE65AD60FA6ADE5F
+
+                        Bj27sTT7X9XgnHAnV7rD0w7Rfue9I5pS4kQ6tNHfoSCccIFiNIFG/5q52dspf0do
+                        Cv0pQdLevx3LE6+vhNnxlKe5si3sbjE5jE5wa6L7v4Ol5mINqThktHARdLY+zGd8
+                        r+vXekzf7/+n65fFN+heARAy0k3ipIU7PKFwKpS//f4c9ijUkx38bkk5XrBg1DNh
+                        TeE51PpZGvXYddvzYm3PB1tsc1MX543F6Kt1i1MNGGbPcksGdN77XjZOXuHnNVk1
+                        TnTI/6w0XjKIP0Org/+kl+MWiuexDQk/+PzzI1SKy0sz1kS8WiQzArEHUnySZN8B
+                        CFcZw9R14PCoZKcvBDTdD9wDE2DQLRe1CsEs84Rlv7nvRITHJMiQbpP6lIRX5y7p
+                        T4NQNqt/nLI4Pnjj68dAkjTeKE39G7titVwQhZ2DsDKfTnYxryYDu1lPpn7gCN2t
+                        kqApMG7YAK2Hnkv4oUdm9B49bXT2Xa5HbWOAoL53LSxd4zxJ6L7XgqbNmLkPExXQ
+                        LpPaaHUtJND1uPrxBJ8zWRFYLUT54p4OwIRqLVqlh0gH8gAuSXipNP2+SKZPzdEs
+                        wjzEMBDXTeGEYJUSRO4ffZIw/yEDgSPRM8GBycC4SZe6RrW4Z0D/xWDSFaPp6HH6
+                        ekMrFCpOKBQudgen0K2y05XMdU8d4GDiBK2HysRMVOtHoouBIerMX6xh/HEAiNYS
+                        hgQf8NF5ySH7+qYULaDnVqSTInf50GM8hWwBE9COzHF5n7+yP/Sv2BOWC9HPtnvX
+                        Ke0VLQi0/5xo9L7bLBZE/f0zcm1iLlcAlhkp56vqKAobNtkruLYjJ21hWU48jQZz
+                        9DLYJJt3GmjhoEdWa+avE6PHWGoY9O6qltb/lvMIm2+wkUkJNZjVnw6oQuGNi3kc
+                        BgsGSsskKK1QJmdFm9qAniLl7cG8Md3qUyCMMnGiy53TrtbJBPSh4zyF9DtancVM
+                        r/uNHYApBKIDF3whENdGCdWXFQwQuOX6ivutdwf2RpQ3/Kd0T+DeEJrRYkkrI6bt
+                        7kMac6UvcYnAusurSdtncu3If2dmKcfRzKwlg6SnGGB+bL+rXMFmJdZ8LZBTgmDY
+                        K+mJL1vqEu2eyozDuHex0/WmzXoNMEaPEfCv4snF3RPOdyFgwt0pKNpOEoAZgLTy
+                        wZ3Wlxv2KFPV9s8dRPFp519PNkDV4pXAQFXHH9j7HqLw1/wz6kLzLP5xKus4LgfP
+                        5GGTw8c1VtT3fuotMbWEa420snkacWpIMiv7V0UhVUBTfO1c819H3BbSPwoQOTHG
+                        ip8DAt2tZxRJqhqrdkvhB7TgBH1kgJrxHjcpPHsSvZjGNTVbx5CtPaTxUDxNwM39
+                        ah64rKqyPQ4qA+RxZqC0iZtaxzxSZYdRPO0f7dqYrwcz8Wt2kRZDD342ObYFbKUi
+                        LroDvkySIbOlM7XsFQm1nt3yEGta+ZIPwafCJdjPmRuMj6Gl9x9kGJ3Vz8Nz9CaH
+                        Hq6GW/8IjG8XWUSYN+3sy+ZmafwieEjPxN+mRAWojc1CQjsEmhgh6B/ZQIOZF7po
+                        rB1W0oSSynz0WLIIa0Wnsj6AYo68AnusK4reaZFxhijTB4FPXx9cUMSGEqSOkTSk
+                        fy+PAtk8QihwtPogq9oIPdvpwOgIjNaJvLylft/2Z0Lyn9/Ku8FxUs3UDVl9MV8t
+                        SJ+e4OUOvmkn1hfVNpkhY0V5ate/caj+shvQnw0HXgsR+5BIZ9euxX/cE8Fg7qBW
+                        1BF6WkDxDMYbqfzkQCvQGd0AGU9fQzvc/DESXZAdw/eDESXWrz3Gu0xgDjeRjMAe
+                        FUfNneMcPty1U2dqsBMVpd68tnKDso/9DViTndN12yg5S2Jr2ZdC5ToW68JP5tZh
+                        TIgnV2sXJt8Yw+ZixeXKbbXUbSGNQ6UV7qLFzqDmfD5hkO37n09GoF3HJS1/KTr5
+                        y1YZWn0FQaADWOCoOaJIzoP/CFxu3mIvitM9N74bbNM1syMymTdwtvBjQNX4O40P
+                        9Y4rNbJHp11vQeHWMfqp9TAsTcpSzkXRLGEFZk0tBPtd0lCfULOzHj8R1y6DPL6U
+                        jP4GqRuW3jsJqcFKJqbJdQegroS1cxBz8Ia/DoYfbqGaFkXhPNEScSsw7IxZVjAQ
+                        DQtVflma5UwVD/au9CX5fLofoqTvEFxakHRUVoTzxZJtpo7JxX3oAdhzpma9wH8s
+                        EgfGFFN032gwyntS79tjKUi439ucRLFdLYyRfJbmDVeHjAGfK/F7vHTERwMesann
+                        vPb2SnK40FeBNZkF505o2TifK0Bh5G6/+lP5V2tNNS6QhGg64rbz3knp1S9Pb6Lp
+                        L1T7HCFWqQRzxU/QkUW4W3aaIxLvboH1RB+qWIizSZNN51VXcaD9y4UvB8EM/set
+                        ak99ilDqKKd0u9jqCd0+QlEkMfO3byl9mXqs631td1wrhUp2fO9n8zRrJX+25nFn
+                        hy4ZC9MtHucBgaXTz8Spq8C/Igv359NBXymD2+bZZbJ9TXqDmSvlcKUsG1UJX51i
+                        XjVwg1tPLiCS+k1maUmMnUcedlBPWZF/ATEaQz365pCaF5nXDNSc6oOLj79UUw4w
+                        K8l94AvdcEgNLUa4JaDSkAFvsWsGULp/sQBfHsOCGNfc1zUoVeVpQ60DD3kRvmhn
+                        ih9ad3PTacHIyq2KYP2te2LgwYVqmDTNloTjuBv5W4jimvlwf+O8tmh9NvxWEC8Y
+                        PLrxJG7mbTmtxGCq1anLAI9ZEeyyLOLv9HwH8TKD5bXsL/AhvwgqG5c5mmGbME7W
+                        G5W1hB0nYfl1RAjUjuWXm5pRHjjM/AcahBC4MzLkt1NjXiG+ovQdoZTVvk5aAfL5
+                        XOBnlYJghWl18V7HqmE00LSLzvfmRGe2W0G0DrRHkCoJl2CSb5Rfzn3fOVeMtHnE
+                        d2xHrUMHYGEVId3o0auKgdf8VpcBokdUyDkpT+Y/admr+kRgnHtyENz1lBsOyD0+
+                        WzS9NnA8j69mmkV38AdzjrXSQ7Eh+7NJyH0yN3akXVROfVBTpEMdN4gmtgJsRS3H
+                        kmxhlV+Uv3TMlhWZ2oTw8Y/17bxobiQLjYy2DXUgHAS/RbBGeoAw9D6OtMxm88J4
+                        vCrnq6jc4JSM8/hjKV6xXc6mbKMOTqoIOeb6czJ7xWmula4X9jVQryrlDwkry/Of
+                        -----END RSA PRIVATE KEY-----
   security:
     user:
       name: root
