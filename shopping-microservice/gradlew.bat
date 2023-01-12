@@ -26,10 +26,6 @@ if "%OS%"=="Windows_NT" setlocal
 
 set DIRNAME=%~dp0
 if "%DIRNAME%"=="" set DIRNAME=.
-<<<<<<< HEAD
-=======
-@rem This is normally unused
->>>>>>> 14b631ca7e762996af8a874ece38b74eea1b80bd
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
 
