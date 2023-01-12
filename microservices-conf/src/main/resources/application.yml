@@ -4,7 +4,7 @@ server:
 spring:
   cloud:
     config:
-      name: project-microservices
+      name: customer-service
       server:
         default-label: main
         git:
