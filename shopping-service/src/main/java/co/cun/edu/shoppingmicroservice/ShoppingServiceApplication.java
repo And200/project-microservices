@@ -1,13 +1,13 @@
-package co.cun.edu.customermicroservice;
+package co.cun.edu.shoppingmicroservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CustomerMicroserviceApplication {
+public class ShoppingServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CustomerMicroserviceApplication.class, args);
+		SpringApplication.run(ShoppingServiceApplication.class, args);
 	}
 
 }

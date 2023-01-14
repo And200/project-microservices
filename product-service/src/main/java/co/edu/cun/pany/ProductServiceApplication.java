@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class PanyApplication {
+public class ProductServiceApplication {
 
 
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(PanyApplication.class);
+		return application.sources(ProductServiceApplication.class);
 
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(PanyApplication.class, args);
+		SpringApplication.run(ProductServiceApplication.class, args);
 	}
 
 	@RequestMapping(value = "/app")

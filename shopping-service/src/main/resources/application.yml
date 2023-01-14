@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8093
 
   #To see H2 console in Browser
   #Enabling h2 console
