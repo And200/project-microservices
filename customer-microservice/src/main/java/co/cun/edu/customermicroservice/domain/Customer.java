@@ -1,6 +1,7 @@
 package co.cun.edu.customermicroservice.domain;
 
 import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
