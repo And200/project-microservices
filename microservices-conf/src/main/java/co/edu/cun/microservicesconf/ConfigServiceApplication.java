@@ -7,10 +7,10 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableConfigServer
 @SpringBootApplication
-public class MicroservicesConfApplication {
+public class ConfigServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroservicesConfApplication.class, args);
+		SpringApplication.run(ConfigServiceApplication.class, args);
 	}
 
 }

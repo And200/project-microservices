@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>microservices-conf</name>
+	<name>config-service</name>
 	<comment>Project microservices-conf created by Buildship.</comment>
 	<projects>
 	</projects>

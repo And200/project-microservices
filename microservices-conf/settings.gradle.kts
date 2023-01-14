@@ -1,1 +1,1 @@
-rootProject.name = "microservices-conf"
+rootProject.name = "config-service"
