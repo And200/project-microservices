@@ -32,8 +32,9 @@ spring:
         use_sql_comments: false
         format_sql: false
     defer-datasource-initialization: true
-  config:
-    import: optional:configserver:http://localhost:8091
+  cloud:
+    config:
+      enabled: false
 
 logging:
   pattern:

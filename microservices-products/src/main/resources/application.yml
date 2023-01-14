@@ -32,9 +32,9 @@ spring:
         use_sql_comments: false
         format_sql: false
     defer-datasource-initialization: true
-  config:
-    import: optional:configserver:http://localhost:8091
-
+  cloud:
+    config:
+      enabled: false
 logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
