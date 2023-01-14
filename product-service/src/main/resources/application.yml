@@ -1,44 +1,10 @@
-server:
-  port: 8092
-
-  #To see H2 console in Browser
-  #Enabling h2 console
-  error:
-    include-message: always
-    include-binding-errors: always
 spring:
-  h2:
-    console:
-      enabled: true
-  datasource:
-    url: jdbc:h2:mem:productDB;DB_CLOSE_DELAY=1;DB_CLOSE_ON_EXIT=FALSE
-    driver-class-name: org.h2.Driver
-
-  sql:
-    init:
-      platform: h2
-      username:
-      password:
-
-#JPA Configuration
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-    database-platform: org.hibernate.dialect.H2Dialect
-    properties:
-      hibernate:
-        show_sql: true
-        use_sql_comments: false
-        format_sql: false
-    defer-datasource-initialization: true
+  application:
+    name: product-service
   cloud:
     config:
-      enabled: false
-logging:
-  pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
+      uri: http://localhost:8081
+      username: root
+      password: s3cr3t
+  config:
+    import: configserver:http://localhost:8081
