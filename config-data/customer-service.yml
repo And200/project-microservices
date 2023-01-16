@@ -44,5 +44,3 @@ eureka:
      defaultZone: http://localhost:8099/eureka/
     fetchRegistry: true
     registerWithEureka: true
-  server:
-    waitTimeInMsWhenSyncEmpty: 0  
