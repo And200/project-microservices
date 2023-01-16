@@ -41,10 +41,6 @@ logging:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
-eureka:
-  client:
     service-url:
       defaultZone: http://localhost:8099/eureka
     register-with-eureka: true
