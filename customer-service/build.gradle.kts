@@ -16,13 +16,12 @@ extra["springCloudVersion"] = "2021.0.5"
 
 dependencies {
 
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("org.springframework.cloud:spring-cloud-starter-config")
-	implementation("org.springframework.cloud:spring-cloud-config-server")
-	implementation ("org.springframework.cloud:spring-cloud-starter-bootstrap")
-	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
-	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
+	//implementation ("org.springframework.boot:spring-boot-starter-actuator")
+	implementation ("org.springframework.cloud:spring-cloud-starter-config")
+	implementation ("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+	//	implementation ('org.springframework.cloud:spring-cloud-starter-sleuth')
 	// https://mvnrepository.com/artifact/javax.validation/validation-api
 	implementation ("org.springframework.boot:spring-boot-starter-validation")
 	compileOnly("org.projectlombok:lombok")
