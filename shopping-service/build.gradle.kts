@@ -26,6 +26,8 @@ dependencies {
 	implementation("org.springframework.cloud:spring-cloud-starter-config")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
+	// https://mvnrepository.com/artifact/com.sun.jersey.contribs/jersey-apache-client4
+	implementation("com.sun.jersey.contribs:jersey-apache-client4:1.19.4")
 	// https://mvnrepository.com/artifact/javax.validation/validation-api
 	implementation ("org.springframework.boot:spring-boot-starter-validation")
 	compileOnly("org.projectlombok:lombok")

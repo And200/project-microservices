@@ -19,6 +19,8 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.cloud:spring-cloud-starter-config")
+	// https://mvnrepository.com/artifact/com.sun.jersey.contribs/jersey-apache-client4
+	implementation("com.sun.jersey.contribs:jersey-apache-client4:1.19.4")	
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
 	// https://mvnrepository.com/artifact/javax.validation/validation-api
