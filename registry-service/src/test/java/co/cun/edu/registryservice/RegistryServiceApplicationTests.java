@@ -1,4 +1,4 @@
-package com.edu.cun.registryservice;
+package co.cun.edu.registryservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
