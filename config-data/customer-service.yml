@@ -42,7 +42,7 @@ eureka:
   client:
     serviceUrl:
      defaultZone: http://localhost:8099/eureka/
-    registerWithEureka: false
-    fetchRegistry: false
+    fetchRegistry: true
+    registerWithEureka: true
   server:
     waitTimeInMsWhenSyncEmpty: 0  
