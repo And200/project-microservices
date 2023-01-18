@@ -95,7 +95,7 @@ public class ProductResource {
     }
 
     @PostMapping(value = "/products")
-    ResponseEntity<Product>createProduct(@Valid @RequestBody Product product, BindingResult bindingResult) throws URISyntaxException {
+   public  ResponseEntity<Product>createProduct(@Valid @RequestBody Product product, BindingResult bindingResult) throws URISyntaxException {
 
         if(bindingResult.hasErrors()){
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, this.formatMessage(bindingResult));
@@ -111,7 +111,7 @@ public class ProductResource {
 
 
     @PutMapping(value = "/products/{id}")
-    ResponseEntity<Product>updateProduct(@PathVariable Long id,@RequestBody Product product){
+   public ResponseEntity<Product>updateProduct(@PathVariable Long id,@RequestBody Product product){
         product.setId(id);
        Product productQuery=this.productService.updateProduct(product);
         if(productQuery==null){
@@ -120,7 +120,7 @@ public class ProductResource {
         return ResponseEntity.ok().body(productQuery);
     }
     @GetMapping(value = "/products/{id}/stock")
-    ResponseEntity<Product>updateStock(@PathVariable Long id,@RequestParam(name = "quantity",required = true) Double quantity){
+   public ResponseEntity<Product>updateStock(@PathVariable Long id,@RequestParam(name = "quantity",required = true) Double quantity){
 
         Product product=this.productService.updateStock(id,quantity);
         return ResponseEntity.ok().body(product);

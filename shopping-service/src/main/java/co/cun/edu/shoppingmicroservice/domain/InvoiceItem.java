@@ -19,6 +19,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import co.cun.edu.shoppingmicroservice.model.Product;
 import lombok.Data;
 
 @Data
@@ -47,6 +49,9 @@ public class InvoiceItem implements Serializable {
 	@Transient
 	private Double subTotal;
 	
+	 @Transient
+	 private Product product;
+	 
 	
 	 @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
 	    @ManyToOne(optional = false,fetch = FetchType.LAZY)
@@ -55,7 +60,7 @@ public class InvoiceItem implements Serializable {
 	   @Valid
 	   @NotNull(message = "The Invoice must not Be Null")
 	    private Invoice invoice;
-	
+	 
 	
 	public Double getSubTotal() {
 		if(this.price>0 && this.quantity>0) {

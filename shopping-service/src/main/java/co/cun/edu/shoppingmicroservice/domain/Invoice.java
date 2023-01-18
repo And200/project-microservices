@@ -18,10 +18,13 @@ import javax.persistence.PrePersist;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 import javax.validation.Valid;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import co.cun.edu.shoppingmicroservice.model.Customer;
 import lombok.Data;
 
 @Data
@@ -52,6 +55,9 @@ public class Invoice implements Serializable{
 	@Column(name = "create_date")
 	@Temporal(TemporalType.DATE)
 	private Date createDate;
+	
+	@Transient
+	private Customer customer;
 	
 	@Valid
 	@JsonIgnore

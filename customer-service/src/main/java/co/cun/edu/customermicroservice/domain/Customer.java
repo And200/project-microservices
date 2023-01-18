@@ -31,7 +31,7 @@ public class Customer implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY )
-	private long id;
+	private Long id;
 	
 	@Size(min = 10, max=10, message= "The character not could higher and less than 11 characters")
 	@Column(name="document_number",unique=true,length=11,nullable=false )
