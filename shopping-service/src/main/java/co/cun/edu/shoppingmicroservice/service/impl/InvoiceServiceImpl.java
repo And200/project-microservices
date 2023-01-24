@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import io.github.resilience4j.circuitbreaker.CircuitBreaker;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,22 +20,37 @@ import co.cun.edu.shoppingmicroservice.repository.InvoiceRepository;
 import co.cun.edu.shoppingmicroservice.service.InvoiceService;
 
 @Service
+@Slf4j
 public class InvoiceServiceImpl implements InvoiceService {
 	
+
 	@Autowired
-	InvoiceRepository invoiceRepository;
-	
+	 InvoiceRepository invoiceRepository;
+
+
 	@Autowired
-	CustomerClient customerClient;
-	
+	 CustomerClient customerClient;
+
+
 	@Autowired
-	ProductClient productClient;
+	 ProductClient productClient;
+
+	 public InvoiceServiceImpl(InvoiceRepository invoiceRepository,CustomerClient customerClient,ProductClient productClient) {
+		 this.invoiceRepository=invoiceRepository;
+		 this.customerClient=customerClient;
+		 this.productClient=productClient;
+
+	}
+
+
 
 	@Override
 	public List<Invoice> findInvoiceAll() {
 
 		return this.invoiceRepository.findAll();
 	}
+
+
 
 	@Override
 	public Invoice createInvoice(Invoice invoice) {
@@ -83,8 +100,8 @@ public class InvoiceServiceImpl implements InvoiceService {
 	
     @Override
     public Invoice getInvoice(Long id) {
-    	
-    	
+
+
         Invoice invoice= this.invoiceRepository.findById(id).orElse(null);
         
         if(invoice!=null) {
@@ -104,8 +121,8 @@ public class InvoiceServiceImpl implements InvoiceService {
  
         return invoice;
     }
-	
-	
-	
+
+
+
 
 }

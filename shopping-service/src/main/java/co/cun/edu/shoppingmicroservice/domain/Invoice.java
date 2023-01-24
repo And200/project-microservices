@@ -6,22 +6,8 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.PrePersist;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.persistence.Transient;
+import javax.persistence.*;
 import javax.validation.Valid;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import co.cun.edu.shoppingmicroservice.model.Customer;
@@ -58,15 +44,14 @@ public class Invoice implements Serializable{
 	
 	@Transient
 	private Customer customer;
-	
+
 	@Valid
-	@JsonIgnore
-	@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
-	@OneToMany(mappedBy ="invoice" ,fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	private Set<InvoiceItem>items;
+	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
+	@JoinColumn(name = "invoice_id")
+	private Set<InvoiceItem> items;
 	
-	
-	@Column(name = "state")
+
 	private String state;
 	
 	public Invoice() {

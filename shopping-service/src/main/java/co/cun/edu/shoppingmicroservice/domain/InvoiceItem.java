@@ -5,21 +5,12 @@ import java.io.Serializable;
 import javax.persistence.Column;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import co.cun.edu.shoppingmicroservice.model.Product;
 import lombok.Data;
 
@@ -51,17 +42,6 @@ public class InvoiceItem implements Serializable {
 	
 	 @Transient
 	 private Product product;
-	 
-	
-	 @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
-	    @ManyToOne(optional = false,fetch = FetchType.LAZY)
-	    @JoinColumn(name = "invoiceitem_id",referencedColumnName = "id",
-	    foreignKey = @ForeignKey(name = "fk_invoice_item"))
-	   @Valid
-	   @NotNull(message = "The Invoice must not Be Null")
-	    private Invoice invoice;
-	 
-	
 	public Double getSubTotal() {
 		if(this.price>0 && this.quantity>0) {
 		return	this.subTotal=price*quantity;
