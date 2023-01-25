@@ -1,8 +1,8 @@
 package co.cun.edu.shoppingmicroservice.service;
 
-import java.util.List;
-
 import co.cun.edu.shoppingmicroservice.domain.Invoice;
+
+import java.util.List;
 
 public interface InvoiceService {
 

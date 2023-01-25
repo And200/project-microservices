@@ -1,15 +1,5 @@
 package co.cun.edu.shoppingmicroservice.service.impl;
 
-import java.util.List;
-
-import java.util.Set;
-import java.util.stream.Collectors;
-
-import io.github.resilience4j.circuitbreaker.CircuitBreaker;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import co.cun.edu.shoppingmicroservice.client.CustomerClient;
 import co.cun.edu.shoppingmicroservice.client.ProductClient;
 import co.cun.edu.shoppingmicroservice.domain.Invoice;
@@ -18,6 +8,13 @@ import co.cun.edu.shoppingmicroservice.model.Customer;
 import co.cun.edu.shoppingmicroservice.model.Product;
 import co.cun.edu.shoppingmicroservice.repository.InvoiceRepository;
 import co.cun.edu.shoppingmicroservice.service.InvoiceService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Service
 @Slf4j

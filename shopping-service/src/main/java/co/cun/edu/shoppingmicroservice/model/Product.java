@@ -1,9 +1,9 @@
 package co.cun.edu.shoppingmicroservice.model;
 
 
-import java.util.Date;
-
 import lombok.Data;
+
+import java.util.Date;
 
 @Data
 public class Product {

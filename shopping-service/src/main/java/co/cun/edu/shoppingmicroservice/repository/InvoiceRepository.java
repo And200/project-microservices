@@ -1,10 +1,9 @@
 package co.cun.edu.shoppingmicroservice.repository;
 
-import java.util.List;
-
+import co.cun.edu.shoppingmicroservice.domain.Invoice;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import co.cun.edu.shoppingmicroservice.domain.Invoice;
+import java.util.List;
 
 public interface InvoiceRepository extends JpaRepository<Invoice, Long> {
 	

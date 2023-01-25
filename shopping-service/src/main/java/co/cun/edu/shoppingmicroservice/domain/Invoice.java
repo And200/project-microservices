@@ -1,17 +1,15 @@
 package co.cun.edu.shoppingmicroservice.domain;
 
-import java.io.Serializable;
-
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import co.cun.edu.shoppingmicroservice.model.Customer;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.Valid;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import co.cun.edu.shoppingmicroservice.model.Customer;
-import lombok.Data;
+import java.io.Serializable;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Data
 @Entity
