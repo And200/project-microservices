@@ -46,14 +46,11 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 
+Feign:
+  hystrix:
+    enabled: true
 management:
-  health:
-    circuitbreakers:
-      enabled: true
   endpoints:
     web:
       exposure:
         include: "*"
-  endpoint:
-    health:
-      show-details: always
