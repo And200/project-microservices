@@ -18,6 +18,8 @@ dependencies {
 	implementation("org.springframework.cloud:spring-cloud-starter-config")
 	implementation("org.springframework.cloud:spring-cloud-starter-gateway")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-sleuth
+	implementation("org.springframework.cloud:spring-cloud-starter-sleuth:3.1.6")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

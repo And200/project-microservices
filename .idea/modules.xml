@@ -5,7 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/co.cun.edu.customer-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/co.cun.edu.customer-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/customer-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/customer-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/product-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/product-service.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/project-microservices.iml" filepath="$PROJECT_DIR$/.idea/project-microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/customer-service/project-microservices.customer-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/customer-service/project-microservices.customer-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/product-service/project-microservices.product-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/product-service/project-microservices.product-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shopping-service/project-microservices.shopping-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/shopping-service/project-microservices.shopping-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shopping-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/shopping-service.main.iml" />
     </modules>
   </component>

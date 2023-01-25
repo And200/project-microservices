@@ -29,6 +29,8 @@ dependencies {
 	// https://mvnrepository.com/artifact/com.sun.jersey.contribs/jersey-apache-client4
 	implementation("com.sun.jersey.contribs:jersey-apache-client4:1.19.4")
 	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-sleuth
+	implementation("org.springframework.cloud:spring-cloud-starter-sleuth:3.1.6")
 	// https://mvnrepository.com/artifact/javax.validation/validation-api
 	implementation ("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")

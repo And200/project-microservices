@@ -32,6 +32,8 @@ dependencies {
 	// https://mvnrepository.com/artifact/javax.validation/validation-api
 	implementation ("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-sleuth
+	implementation("org.springframework.cloud:spring-cloud-starter-sleuth:3.1.6")
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.h2database:h2")
 	annotationProcessor("org.projectlombok:lombok")

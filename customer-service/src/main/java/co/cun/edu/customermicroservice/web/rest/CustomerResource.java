@@ -1,5 +1,19 @@
 package co.cun.edu.customermicroservice.web.rest;
 
+import co.cun.edu.customermicroservice.domain.Customer;
+import co.cun.edu.customermicroservice.domain.Region;
+import co.cun.edu.customermicroservice.service.CustomerService;
+import co.cun.edu.customermicroservice.web.rest.errors.ErrorMessage;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
+
+import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -7,32 +21,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
-import javax.validation.Valid;
-
-import org.springframework.boot.autoconfigure.info.ProjectInfoProperties.Build;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.server.ResponseStatusException;
-
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import co.cun.edu.customermicroservice.domain.Customer;
-import co.cun.edu.customermicroservice.domain.Region;
-import co.cun.edu.customermicroservice.service.CustomerService;
-import co.cun.edu.customermicroservice.web.rest.errors.ErrorMessage;
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController

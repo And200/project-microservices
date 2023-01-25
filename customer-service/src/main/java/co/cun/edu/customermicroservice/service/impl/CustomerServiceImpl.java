@@ -1,14 +1,13 @@
 package co.cun.edu.customermicroservice.service.impl;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import co.cun.edu.customermicroservice.domain.Customer;
 import co.cun.edu.customermicroservice.domain.Region;
 import co.cun.edu.customermicroservice.repository.CustomerRepository;
 import co.cun.edu.customermicroservice.service.CustomerService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {

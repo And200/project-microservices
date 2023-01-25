@@ -1,12 +1,11 @@
 package co.cun.edu.customermicroservice.web.rest.errors;
 
-import java.util.List;
-
-import java.util.Map;
-
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
+import java.util.Map;
 
 @Getter @Setter @Builder
 public class ErrorMessage {

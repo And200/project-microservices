@@ -24,6 +24,8 @@ dependencies {
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-sleuth
+	implementation("org.springframework.cloud:spring-cloud-starter-sleuth:3.1.6")
 	// https://mvnrepository.com/artifact/javax.validation/validation-api
 	implementation ("org.springframework.boot:spring-boot-starter-validation")
 	compileOnly("org.projectlombok:lombok")

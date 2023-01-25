@@ -1,9 +1,9 @@
 package co.cun.edu.customermicroservice.service;
 
-import java.util.List;
-
 import co.cun.edu.customermicroservice.domain.Customer;
 import co.cun.edu.customermicroservice.domain.Region;
+
+import java.util.List;
 
 public interface CustomerService {
 
